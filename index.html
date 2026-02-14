@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeDecode — Error Codes & Keyboard Shortcuts Decoded Instantly</title>
+<meta name="description" content="Instantly decode any error code or find keyboard shortcuts for any app. Fast, searchable, community-driven tech reference with 10,000+ solutions.">
+<meta name="keywords" content="error codes, keyboard shortcuts, fix error, troubleshoot, Windows error, Mac shortcut, HTTP error codes, BSOD fix">
+<meta property="og:title" content="CodeDecode — Error Codes & Keyboard Shortcuts Decoded">
+<meta property="og:description" content="The fastest way to decode errors and master shortcuts. 10,000+ solutions.">
+<link rel="canonical" href="https://codedecode.dev/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"CodeDecode","url":"https://codedecode.dev","potentialAction":{"@type":"SearchAction","target":"https://codedecode.dev/search?q={search_term_string}","query-input":"required name=search_term_string"},"description":"Instantly decode any error code or find keyboard shortcuts for any app."}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070b14;--bg2:#0f1623;--bg3:#151f33;--bg3h:#1a2845;--g:#00ff88;--cy:#00d4ff;--or:#ff6b35;--pu:#a855f7;--rd:#ff4757;--t1:#e8edf5;--t2:#8892a8;--t3:#4a5568;--bd:#1e2d4a}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);line-height:1.6;overflow-x:hidden}
+.gbg{position:fixed;inset:0;background-image:linear-gradient(rgba(0,255,136,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,136,.03) 1px,transparent 1px);background-size:60px 60px;z-index:0;pointer-events:none}
+.gbg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(0,255,136,.07) 0%,transparent 60%)}
+.w{max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+
+/* Header */
+header{position:sticky;top:0;z-index:100;background:rgba(7,11,20,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);padding:12px 0}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;cursor:pointer}
+.logo-i{width:36px;height:36px;background:linear-gradient(135deg,var(--g),var(--cy));border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:16px;color:var(--bg)}
+.logo-t{font-family:'Outfit',sans-serif;font-size:22px;font-weight:700;color:var(--t1);letter-spacing:-.5px}
+.logo-t span{color:var(--g)}
+nav{display:flex;gap:4px}
+nav a{color:var(--t2);text-decoration:none;font-size:14px;font-weight:500;padding:8px 14px;border-radius:6px;transition:.2s;cursor:pointer}
+nav a:hover,nav a.on{color:var(--g);background:rgba(0,255,136,.08)}
+
+/* Hero */
+.hero{padding:80px 0 50px;text-align:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.2);border-radius:100px;padding:6px 16px;font-size:13px;color:var(--g);margin-bottom:24px;font-family:'JetBrains Mono',monospace}
+.badge .dot{width:8px;height:8px;background:var(--g);border-radius:50%;animation:pul 2s infinite}
+@keyframes pul{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-family:'Outfit',sans-serif;font-size:clamp(34px,5vw,62px);font-weight:700;line-height:1.1;margin-bottom:16px;letter-spacing:-1.5px}
+.gr{background:linear-gradient(135deg,var(--g),var(--cy));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{font-size:18px;color:var(--t2);max-width:600px;margin:0 auto 40px}
+
+/* Search */
+.sc{max-width:700px;margin:0 auto;position:relative}
+.sb{display:flex;align-items:center;background:var(--bg2);border:2px solid var(--bd);border-radius:16px;overflow:hidden;transition:.3s}
+.sb:focus-within{border-color:var(--g);box-shadow:0 0 20px rgba(0,255,136,.15),0 8px 32px rgba(0,0,0,.3)}
+.sp{font-family:'JetBrains Mono',monospace;color:var(--g);padding:0 0 0 20px;font-size:16px;user-select:none}
+.sb input{flex:1;background:0;border:0;outline:0;color:var(--t1);font-size:16px;padding:18px 14px;font-family:'JetBrains Mono',monospace}
+.sb input::placeholder{color:var(--t3)}
+.sbtn{background:linear-gradient(135deg,var(--g),var(--cy));border:0;color:var(--bg);padding:12px 24px;margin:6px;border-radius:10px;font-weight:600;font-size:14px;cursor:pointer;transition:.2s;white-space:nowrap}
+.sbtn:hover{transform:scale(1.03);box-shadow:0 0 20px rgba(0,255,136,.3)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+.tag{font-size:12px;font-family:'JetBrains Mono',monospace;padding:5px 12px;border-radius:6px;background:rgba(255,255,255,.04);border:1px solid var(--bd);color:var(--t2);cursor:pointer;transition:.2s}
+.tag:hover{border-color:var(--g);color:var(--g);background:rgba(0,255,136,.06)}
+
+/* Dropdown */
+.dd{position:absolute;top:calc(100% + 8px);left:0;right:0;background:var(--bg2);border:1px solid var(--bd);border-radius:12px;max-height:400px;overflow-y:auto;display:none;z-index:200;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.dd.on{display:block}
+.di{display:flex;align-items:center;gap:14px;padding:14px 18px;cursor:pointer;transition:.15s;border-bottom:1px solid rgba(255,255,255,.03)}
+.di:hover{background:var(--bg3h)}
+.tb{font-size:10px;font-family:'JetBrains Mono',monospace;padding:3px 8px;border-radius:4px;font-weight:600;text-transform:uppercase;flex-shrink:0}
+.tb.e{background:rgba(255,71,87,.15);color:var(--rd)}
+.tb.s{background:rgba(0,212,255,.15);color:var(--cy)}
+.di .dt{font-weight:600;font-size:14px}
+.di .ds{font-size:12px;color:var(--t2)}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:50px 0}
+.st{text-align:center;padding:20px 16px;border-radius:12px;border:1px solid var(--bd);background:rgba(255,255,255,.02)}
+.sn{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:700;color:var(--g)}
+.sl{font-size:13px;color:var(--t2);margin-top:4px}
+
+/* Section title */
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:24px}
+.sh h2{font-family:'Outfit',sans-serif;font-size:26px;font-weight:700;letter-spacing:-.5px}
+.sh .ln{flex:1;height:1px;background:linear-gradient(90deg,var(--bd),transparent)}
+
+/* Trending */
+.trscr{display:flex;gap:12px;overflow-x:auto;padding-bottom:12px;margin-bottom:50px}
+.trch{display:flex;align-items:center;gap:8px;padding:10px 18px;background:var(--bg3);border:1px solid var(--bd);border-radius:100px;white-space:nowrap;cursor:pointer;transition:.2s;font-size:13px}
+.trch:hover{border-color:var(--g);background:rgba(0,255,136,.06)}
+.trch .f{color:var(--or);font-size:12px}
+
+/* Dual panels */
+.dp{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:50px}
+.pn{background:var(--bg3);border:1px solid var(--bd);border-radius:16px;overflow:hidden}
+.ph{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;border-bottom:1px solid var(--bd)}
+.ph h3{display:flex;align-items:center;gap:10px;font-family:'Outfit',sans-serif;font-size:18px;font-weight:600}
+.phi{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px}
+.phi.er{background:rgba(255,71,87,.15)}
+.phi.sc{background:rgba(0,212,255,.15)}
+.va{font-size:13px;color:var(--g);text-decoration:none;cursor:pointer}
+
+/* Error cards */
+.ec{display:flex;align-items:flex-start;gap:14px;padding:16px;border-radius:10px;transition:.2s;cursor:pointer}
+.ec:hover{background:var(--bg3h)}
+.ecb{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;padding:6px 10px;border-radius:6px;white-space:nowrap;flex-shrink:0}
+.ecb.cr{background:rgba(255,71,87,.15);color:var(--rd);border:1px solid rgba(255,71,87,.3)}
+.ecb.wr{background:rgba(255,107,53,.15);color:var(--or);border:1px solid rgba(255,107,53,.3)}
+.ecc h4{font-size:14px;font-weight:600;margin-bottom:3px}
+.ecc p{font-size:13px;color:var(--t2)}
+.em{display:flex;gap:8px;margin-top:5px;font-size:11px;color:var(--t3);font-family:'JetBrains Mono',monospace}
+
+/* Shortcut cards */
+.skc{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-radius:10px;transition:.2s;cursor:pointer}
+.skc:hover{background:var(--bg3h)}
+.skl{display:flex;align-items:center;gap:12px}
+.ai{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0}
+.ai1{background:#1e4a8a;color:#4fc3f7}.ai2{background:#1b5e20;color:#66bb6a}.ai3{background:#1a237e;color:#42a5f5}.ai4{background:#4a148c;color:#ce93d8}.ai5{background:#1b1b2f;color:#00ff88}
+.ski h4{font-size:14px;font-weight:600}.ski p{font-size:12px;color:var(--t2)}
+.skk{display:flex;gap:4px;align-items:center}
+kbd{font-family:'JetBrains Mono',monospace;font-size:11px;background:var(--bg);border:1px solid var(--bd);border-bottom:2px solid var(--bd);padding:4px 8px;border-radius:5px;color:var(--t1);min-width:26px;text-align:center}
+.kp{color:var(--t3);font-size:11px}
+
+/* Category grid */
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:50px}
+.cc{background:var(--bg3);border:1px solid var(--bd);border-radius:12px;padding:20px;cursor:pointer;transition:.25s;text-decoration:none;color:inherit}
+.cc:hover{border-color:var(--g);transform:translateY(-2px);box-shadow:0 0 20px rgba(0,255,136,.15)}
+.cc .ci{font-size:24px;margin-bottom:8px;display:block}
+.cc h4{font-size:14px;font-weight:600;margin-bottom:3px}
+.cc .ct{font-size:12px;color:var(--t3);font-family:'JetBrains Mono',monospace}
+
+/* Ad slots */
+.ad{background:repeating-linear-gradient(45deg,rgba(255,255,255,.015),rgba(255,255,255,.015) 10px,rgba(255,255,255,.005) 10px,rgba(255,255,255,.005) 20px);border:1px dashed var(--bd);border-radius:12px;padding:16px;text-align:center;color:var(--t3);font-size:11px;font-family:'JetBrains Mono',monospace;margin:24px 0;min-height:90px;display:flex;align-items:center;justify-content:center}
+
+/* Detail page */
+.bc{display:flex;align-items:center;gap:8px;margin-bottom:24px;font-size:13px;color:var(--t3);padding-top:30px}
+.bc a{color:var(--g);text-decoration:none;cursor:pointer}
+.dh{background:var(--bg3);border:1px solid var(--bd);border-radius:16px;padding:32px;margin-bottom:24px}
+.dh .et{display:flex;align-items:center;gap:16px;margin-bottom:16px;flex-wrap:wrap}
+.dh h1{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:700}
+.svt{font-size:12px;padding:4px 12px;border-radius:100px;font-weight:600;font-family:'JetBrains Mono',monospace}
+.svt.cr{background:rgba(255,71,87,.15);color:var(--rd)}
+.svt.wr{background:rgba(255,107,53,.15);color:var(--or)}
+.dh .sum{font-size:15px;color:var(--t2);margin-bottom:20px;line-height:1.7}
+.dmr{display:flex;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--t2)}
+.dmr strong{color:var(--t1)}
+.db{display:flex;align-items:center;gap:8px;margin-top:12px}
+.dbs{height:4px;flex:1;border-radius:2px;background:var(--bd)}.dbs.f{background:var(--g)}.dbs.m{background:var(--or)}.dbs.h{background:var(--rd)}
+.dbl{font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--t3)}
+
+/* Solution card */
+.sol{background:var(--bg3);border:1px solid var(--bd);border-radius:16px;padding:28px;margin-bottom:24px}
+.sol h2{font-family:'Outfit',sans-serif;font-size:20px;font-weight:700;margin-bottom:18px}
+.step{display:flex;gap:16px;margin-bottom:16px;padding:14px;border-radius:10px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.04)}
+.snum{width:30px;height:30px;background:linear-gradient(135deg,var(--g),var(--cy));color:var(--bg);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:13px;flex-shrink:0}
+.stc h4{font-size:14px;font-weight:600;margin-bottom:4px}
+.stc p{font-size:13px;color:var(--t2);line-height:1.6}
+.cb{background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:12px 16px;margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--g);position:relative;overflow-x:auto;white-space:pre-wrap}
+.cpb{position:absolute;top:8px;right:8px;background:var(--bg2);border:1px solid var(--bd);color:var(--t2);padding:3px 10px;border-radius:4px;cursor:pointer;font-size:11px;font-family:'JetBrains Mono',monospace}
+.cpb:hover{color:var(--g);border-color:var(--g)}
+.hlp{display:flex;align-items:center;gap:12px;padding:14px 0;border-top:1px solid var(--bd);margin-top:18px}
+.hlp span{font-size:14px;color:var(--t2)}
+.vb{background:var(--bg);border:1px solid var(--bd);color:var(--t2);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:13px;transition:.2s}
+.vb:hover{border-color:var(--g);color:var(--g)}
+.vb.vd{background:rgba(0,255,136,.1);border-color:var(--g);color:var(--g)}
+
+/* Related */
+.rg{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.ri{padding:12px 16px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.05);border-radius:8px;cursor:pointer;transition:.2s}
+.ri:hover{border-color:var(--g)}
+.ri code{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--cy)}
+.ri p{font-size:12px;color:var(--t2);margin-top:2px}
+
+/* Shortcut detail */
+.sdg{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sdi{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.04);border-radius:10px;gap:12px}
+.sdi .an{font-size:13px;font-weight:500}
+.ost{display:flex;background:var(--bg);border:1px solid var(--bd);border-radius:8px;overflow:hidden;margin-bottom:20px;width:fit-content}
+.ost button{padding:8px 20px;background:0;border:0;color:var(--t2);cursor:pointer;font-size:13px;font-weight:500;transition:.2s}
+.ost button.on{background:rgba(0,255,136,.1);color:var(--g)}
+
+/* Tools page */
+.tool-box{background:var(--bg3);border:1px solid var(--bd);border-radius:16px;padding:28px}
+.tool-box h3{font-family:'Outfit',sans-serif;font-size:20px;margin-bottom:8px}
+.tool-box>p{color:var(--t2);font-size:14px;margin-bottom:20px}
+.tin{width:100%;padding:10px 14px;background:var(--bg);border:1px solid var(--bd);border-radius:8px;color:var(--t1);font-family:'JetBrains Mono',monospace;font-size:14px;outline:0}
+.tin:focus{border-color:var(--g)}
+.tbtn{padding:10px 24px;background:linear-gradient(135deg,var(--g),var(--cy));border:0;border-radius:8px;color:var(--bg);font-weight:600;cursor:pointer;transition:.2s}
+.tbtn:hover{box-shadow:0 0 20px rgba(0,255,136,.3)}
+.tarea{background:var(--bg);border:1px solid var(--bd);border-radius:12px;padding:28px;text-align:center}
+
+/* Footer */
+footer{border-top:1px solid var(--bd);padding:40px 0;margin-top:50px}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+.fb p{font-size:14px;color:var(--t2);margin-top:12px;line-height:1.6}
+.fc h4{font-size:12px;font-weight:600;color:var(--t1);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px}
+.fc a{display:block;color:var(--t2);text-decoration:none;font-size:13px;padding:3px 0;transition:.2s;cursor:pointer}
+.fc a:hover{color:var(--g)}
+.fbot{border-top:1px solid var(--bd);margin-top:24px;padding-top:16px;display:flex;justify-content:space-between;font-size:12px;color:var(--t3)}
+
+/* Pages */
+.pg{display:none}.pg.on{display:block}
+
+/* Animations */
+@keyframes fiu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.an{animation:fiu .5s ease forwards}
+.d1{animation-delay:.1s;opacity:0}.d2{animation-delay:.2s;opacity:0}.d3{animation-delay:.3s;opacity:0}
+
+/* Responsive */
+@media(max-width:768px){.dp{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.fg{grid-template-columns:1fr 1fr;gap:24px}.sdg{grid-template-columns:1fr}nav{display:none}.dmr{flex-direction:column;gap:6px}}
+</style>
+</head>
+<body>
+<div class="gbg"></div>
+
+<!-- HEADER -->
+<header>
+<div class="w hd">
+<div class="logo" onclick="go('home')"><div class="logo-i">&lt;/&gt;</div><div class="logo-t">Code<span>Decode</span></div></div>
+<nav>
+<a data-n="home" class="on" onclick="go('home')">Home</a>
+<a data-n="errors" onclick="go('errors')">Error Codes</a>
+<a data-n="shortcuts" onclick="go('shortcuts')">Shortcuts</a>
+<a data-n="tools" onclick="go('tools')">Tools</a>
+</nav>
+</div>
+</header>
+
+<!-- HOME -->
+<div id="home" class="pg on">
+<div class="w">
+<section class="hero">
+<div class="badge an"><div class="dot"></div>10,847 codes indexed &bull; Updated live</div>
+<h1 class="an d1">Decode any <span class="gr">error.</span><br>Master every <span class="gr">shortcut.</span></h1>
+<p class="an d2">The fastest, cleanest tech reference on the web. Paste an error code or search for any app's shortcuts — get instant, actionable answers.</p>
+<div class="sc an d3">
+<div class="sb">
+<span class="sp">&gt;</span>
+<input type="text" id="ms" placeholder="0x80070005, Ctrl+Shift+P, HTTP 403..." autocomplete="off" oninput="hs(this.value)" onkeydown="if(event.key==='Enter')hs(this.value)">
+<button class="sbtn" onclick="hs(document.getElementById('ms').value)">Decode →</button>
+</div>
+<div class="dd" id="sdd"></div>
+<div class="tags">
+<span class="tag" onclick="qs('0x80070005')">0x80070005</span>
+<span class="tag" onclick="qs('HTTP 404')">HTTP 404</span>
+<span class="tag" onclick="qs('BSOD')">BSOD</span>
+<span class="tag" onclick="qs('VS Code')">VS Code</span>
+<span class="tag" onclick="qs('Excel')">Excel</span>
+<span class="tag" onclick="qs('npm ERR')">npm ERR</span>
+</div>
+</div>
+</section>
+
+<div class="stats">
+<div class="st"><span class="sn">5,847</span><div class="sl">Error Codes</div></div>
+<div class="st"><span class="sn">4,920</span><div class="sl">Shortcuts</div></div>
+<div class="st"><span class="sn">142</span><div class="sl">Apps Covered</div></div>
+<div class="st"><span class="sn">98%</span><div class="sl">Fix Rate</div></div>
+</div>
+
+<div class="ad">[ Google AdSense — Leaderboard 728×90 ]</div>
+
+<section>
+<div class="sh"><h2>🔥 Trending Now</h2><div class="ln"></div></div>
+<div class="trscr">
+<div class="trch" onclick="sed('e1')"><span class="f">▲12%</span> 0x80070005</div>
+<div class="trch" onclick="sed('e2')"><span class="f">▲9%</span> HTTP 500</div>
+<div class="trch" onclick="ssd('s1')"><span class="f">▲7%</span> VS Code</div>
+<div class="trch" onclick="sed('e3')"><span class="f">▲6%</span> IRQL_NOT_LESS</div>
+<div class="trch" onclick="sed('e4')"><span class="f">▲5%</span> npm ENOENT</div>
+<div class="trch" onclick="ssd('s2')"><span class="f">▲4%</span> Excel</div>
+<div class="trch" onclick="sed('e5')"><span class="f">▲3%</span> SSL Cert Error</div>
+</div>
+</section>
+
+<div class="dp">
+<!-- Errors panel -->
+<div class="pn">
+<div class="ph"><h3><span class="phi er">⚠</span> Popular Error Codes</h3><span class="va" onclick="go('errors')">View all →</span></div>
+<div style="padding:8px" id="errList"></div>
+</div>
+<!-- Shortcuts panel -->
+<div class="pn">
+<div class="ph"><h3><span class="phi sc">⌨</span> Popular Shortcuts</h3><span class="va" onclick="go('shortcuts')">View all →</span></div>
+<div style="padding:8px" id="scList"></div>
+</div>
+</div>
+
+<div class="ad">[ Google AdSense — In-Content 336×280 ]</div>
+
+<section>
+<div class="sh"><h2>Browse Error Categories</h2><div class="ln"></div></div>
+<div class="cg">
+<div class="cc" onclick="go('errors')"><span class="ci">🪟</span><h4>Windows Errors</h4><span class="ct">1,247 codes</span></div>
+<div class="cc" onclick="go('errors')"><span class="ci">🌐</span><h4>HTTP Status Codes</h4><span class="ct">63 codes</span></div>
+<div class="cc" onclick="go('errors')"><span class="ci">🐧</span><h4>Linux / Unix</h4><span class="ct">892 codes</span></div>
+<div class="cc" onclick="go('errors')"><span class="ci">🔵</span><h4>BSOD Stop Codes</h4><span class="ct">156 codes</span></div>
+<div class="cc" onclick="go('errors')"><span class="ci">📦</span><h4>npm / Node.js</h4><span class="ct">234 codes</span></div>
+<div class="cc" onclick="go('errors')"><span class="ci">🐍</span><h4>Python Errors</h4><span class="ct">189 codes</span></div>
+<div class="cc" onclick="go('errors')"><span class="ci">🛢</span><h4>SQL / Database</h4><span class="ct">412 codes</span></div>
+<div class="cc" onclick="go('errors')"><span class="ci">🔒</span><h4>SSL / Security</h4><span class="ct">98 codes</span></div>
+<div class="cc" onclick="go('errors')"><span class="ci">🎮</span><h4>Game Errors</h4><span class="ct">567 codes</span></div>
+<div class="cc" onclick="go('errors')"><span class="ci">🖨</span><h4>Printer Errors</h4><span class="ct">345 codes</span></div>
+<div class="cc" onclick="go('errors')"><span class="ci">📱</span><h4>Android / iOS</h4><span class="ct">278 codes</span></div>
+<div class="cc" onclick="go('errors')"><span class="ci">☁️</span><h4>AWS / Cloud</h4><span class="ct">456 codes</span></div>
+</div>
+</section>
+
+<section>
+<div class="sh"><h2>Browse Shortcut Categories</h2><div class="ln"></div></div>
+<div class="cg">
+<div class="cc" onclick="go('shortcuts')"><span class="ci">💻</span><h4>Code Editors</h4><span class="ct">VS Code, Vim, Sublime...</span></div>
+<div class="cc" onclick="go('shortcuts')"><span class="ci">🎨</span><h4>Design Tools</h4><span class="ct">Photoshop, Figma, Sketch...</span></div>
+<div class="cc" onclick="go('shortcuts')"><span class="ci">📊</span><h4>Office Suite</h4><span class="ct">Excel, Word, PowerPoint...</span></div>
+<div class="cc" onclick="go('shortcuts')"><span class="ci">🌐</span><h4>Browsers</h4><span class="ct">Chrome, Firefox, Safari...</span></div>
+<div class="cc" onclick="go('shortcuts')"><span class="ci">🖥</span><h4>Operating Systems</h4><span class="ct">Windows, macOS, Linux...</span></div>
+<div class="cc" onclick="go('shortcuts')"><span class="ci">🎬</span><h4>Video Editing</h4><span class="ct">Premiere, DaVinci...</span></div>
+</div>
+</section>
+</div>
+</div>
+
+<!-- ERROR DETAIL -->
+<div id="errdet" class="pg"><div class="w" id="edC"></div></div>
+
+<!-- SHORTCUT DETAIL -->
+<div id="scdet" class="pg"><div class="w" id="sdC"></div></div>
+
+<!-- ERRORS LISTING -->
+<div id="errors" class="pg">
+<div class="w" style="padding-top:40px;padding-bottom:80px">
+<div class="sh"><h2>All Error Codes</h2><div class="ln"></div></div>
+<p style="color:var(--t2);margin-bottom:24px">Browse our database of 5,847 error codes across all platforms with causes, fixes, and community-verified solutions.</p>
+<div class="ad">[ Google AdSense — Leaderboard 728×90 ]</div>
+<div class="cg" style="margin-top:24px" id="errGrid"></div>
+</div>
+</div>
+
+<!-- SHORTCUTS LISTING -->
+<div id="shortcuts" class="pg">
+<div class="w" style="padding-top:40px;padding-bottom:80px">
+<div class="sh"><h2>All Keyboard Shortcuts</h2><div class="ln"></div></div>
+<p style="color:var(--t2);margin-bottom:24px">Master keyboard shortcuts for 142+ applications. Toggle between Windows/Mac and practice with our interactive trainer.</p>
+<div class="ad">[ Google AdSense — Leaderboard 728×90 ]</div>
+<div class="cg" style="margin-top:24px" id="scGrid"></div>
+</div>
+</div>
+
+<!-- TOOLS -->
+<div id="tools" class="pg">
+<div class="w" style="padding-top:40px;padding-bottom:80px">
+<div class="sh"><h2>Interactive Tools</h2><div class="ln"></div></div>
+<p style="color:var(--t2);margin-bottom:32px">Unique tools to help you fix errors faster and learn shortcuts quicker.</p>
+<div class="dp">
+<div class="tool-box">
+<h3>🎯 Shortcut Trainer</h3>
+<p>We show the action, you press the keys. Track your speed and accuracy.</p>
+<div class="tarea">
+<div style="color:var(--t3);font-size:13px;margin-bottom:8px">Press the shortcut for:</div>
+<div id="tq" style="font-size:22px;font-weight:700;margin-bottom:16px">Undo last action</div>
+<div id="ti" style="font-family:'JetBrains Mono',monospace;font-size:18px;color:var(--g);min-height:30px">Waiting for input...</div>
+<div id="tf" style="margin-top:10px;font-size:14px;min-height:20px"></div>
+<button class="tbtn" onclick="ntq()" style="margin-top:14px">Next Challenge →</button>
+</div>
+</div>
+<div class="tool-box">
+<h3>🔍 Error Diff Checker</h3>
+<p>Compare two similar error codes to understand exactly what's different.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+<div><label style="font-size:12px;color:var(--t3);display:block;margin-bottom:4px">Error A</label><input class="tin" id="da" value="0x80070005"></div>
+<div><label style="font-size:12px;color:var(--t3);display:block;margin-bottom:4px">Error B</label><input class="tin" id="db" value="0x80004005"></div>
+</div>
+<button class="tbtn" onclick="rdiff()" style="width:100%">Compare Errors →</button>
+<div id="dr" style="margin-top:16px;padding:16px;background:var(--bg);border:1px solid var(--bd);border-radius:8px;font-size:13px;display:none"></div>
+</div>
+</div>
+<div class="ad">[ Google AdSense — In-Content 336×280 ]</div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+<div class="w">
+<div class="fg">
+<div class="fb"><div class="logo"><div class="logo-i">&lt;/&gt;</div><div class="logo-t">Code<span>Decode</span></div></div><p>The fastest way to decode errors and master shortcuts. Built by developers, for everyone.</p></div>
+<div class="fc"><h4>Error Codes</h4><a onclick="go('errors')">Windows Errors</a><a onclick="go('errors')">HTTP Status Codes</a><a onclick="go('errors')">BSOD Stop Codes</a><a onclick="go('errors')">Linux Errors</a></div>
+<div class="fc"><h4>Shortcuts</h4><a onclick="ssd('s1')">VS Code</a><a onclick="ssd('s2')">Excel</a><a onclick="ssd('s3')">Photoshop</a><a onclick="ssd('s4')">Chrome</a></div>
+<div class="fc"><h4>Tools</h4><a onclick="go('tools')">Shortcut Trainer</a><a onclick="go('tools')">Error Diff Checker</a><a>Cheat Sheet PDFs</a><a>API Access</a></div>
+</div>
+<div class="fbot"><span>&copy; 2026 CodeDecode. All rights reserved.</span><span>Privacy · Terms · Contact</span></div>
+</div>
+</footer>
+
+<script>
+// ======== DATA ========
+const ED={
+e1:{code:'0x80070005',title:'E_ACCESSDENIED — Access Denied',sev:'cr',plat:'Windows 10/11',cat:'Windows System Error',srch:'284K/mo',
+sum:'This error occurs when Windows or an application lacks required permissions to access a file, folder, registry key, or system resource. Commonly triggered during updates, installations, or accessing restricted directories.',
+diff:2,diffl:'Moderate',
+causes:['Insufficient user permissions or not running as admin','Corrupted Windows Update components','Third-party antivirus blocking access','Corrupted user profile or registry permissions','Group Policy restrictions in domain environments'],
+steps:[
+{t:'Run as Administrator',d:'Right-click the application or installer and select "Run as administrator." For Update issues, open Command Prompt as admin.'},
+{t:'Reset Windows Update Components',d:'Stop update services, rename distribution folders, and restart.',c:'net stop wuauserv\nnet stop cryptSvc\nnet stop bits\nren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old\nren C:\\Windows\\System32\\catroot2 catroot2.old\nnet start wuauserv\nnet start cryptSvc\nnet start bits'},
+{t:'Take Ownership of Files',d:'If the error relates to a specific file or folder, take ownership via Properties > Security > Advanced.',c:'takeown /f "C:\\path\\to\\file" /r /d y\nicacls "C:\\path\\to\\file" /grant administrators:F /t'},
+{t:'Run SFC and DISM',d:'Scan for and repair corrupted system files that may be causing permission issues.',c:'sfc /scannow\nDISM /Online /Cleanup-Image /RestoreHealth'}
+],
+rel:[{c:'0x80004005',d:'Unspecified Error'},{c:'0x80070057',d:'Invalid Parameter'},{c:'0x80070002',d:'File Not Found'},{c:'0x80070032',d:'Not Supported'}]
+},
+e2:{code:'HTTP 500',title:'Internal Server Error',sev:'cr',plat:'Web / All Browsers',cat:'HTTP Status Code',srch:'450K/mo',
+sum:'The HTTP 500 is a generic server-side error indicating an unexpected condition prevented fulfilling the request. It\'s the catch-all response when no more specific code is suitable.',
+diff:3,diffl:'Advanced',
+causes:['Server-side script errors (PHP, Python, Node.js exceptions)','Misconfigured .htaccess or server configuration','Exceeded server memory or resource limits','Database connection failures','Incompatible plugin or module updates'],
+steps:[
+{t:'Check Server Error Logs',d:'The most reliable way to diagnose. Check your error log for the specific exception.',c:'tail -f /var/log/apache2/error.log\n# or for nginx:\ntail -f /var/log/nginx/error.log'},
+{t:'Verify .htaccess Configuration',d:'A malformed .htaccess is one of the most common causes. Temporarily rename it.',c:'mv .htaccess .htaccess.backup\n# Test the site — if it works, the issue is in .htaccess'},
+{t:'Check File Permissions',d:'Directories should be 755 and files 644.',c:'find /var/www/html -type d -exec chmod 755 {} \\;\nfind /var/www/html -type f -exec chmod 644 {} \\;'},
+{t:'Increase PHP Memory Limit',d:'If running out of memory, increase the limit.',c:'# In php.ini:\nmemory_limit = 256M\n# Or in .htaccess:\nphp_value memory_limit 256M'}
+],
+rel:[{c:'HTTP 502',d:'Bad Gateway'},{c:'HTTP 503',d:'Service Unavailable'},{c:'HTTP 504',d:'Gateway Timeout'},{c:'HTTP 403',d:'Forbidden'}]
+},
+e3:{code:'IRQL_NOT_LESS_OR_EQUAL',title:'Blue Screen of Death (BSOD)',sev:'cr',plat:'Windows 10/11',cat:'BSOD Stop Code',srch:'180K/mo',
+sum:'This BSOD stop code (0x0000000A) occurs when a driver or kernel process tries to access memory at an invalid IRQL. Almost always points to a faulty or incompatible driver.',
+diff:3,diffl:'Advanced',
+causes:['Outdated, corrupted, or incompatible device drivers','Faulty RAM modules','Overclocked hardware causing instability','Corrupted system files','Recently installed hardware/software conflicts'],
+steps:[
+{t:'Identify the Faulty Driver',d:'Use Windows Event Viewer or BlueScreenView to find which driver caused the crash from the minidump file.'},
+{t:'Update or Roll Back Drivers',d:'Open Device Manager, right-click the device, update or roll back.',c:'pnputil /enum-drivers\npnputil /delete-driver oem##.inf /force'},
+{t:'Run Memory Diagnostic',d:'Test RAM for errors.',c:'mdsched.exe'},
+{t:'Disable Overclocking',d:'If you\'ve overclocked CPU/GPU/RAM, reset to default speeds in BIOS. Unstable overclocks are a leading cause.'}
+],
+rel:[{c:'KERNEL_DATA_INPAGE',d:'Disk Read Error'},{c:'PAGE_FAULT_IN_NONPAGED',d:'Memory Error'},{c:'SYSTEM_SERVICE_EXCEPTION',d:'Service Crash'}]
+},
+e4:{code:'ENOENT',title:'npm: No Such File or Directory',sev:'wr',plat:'Node.js / npm',cat:'Package Manager Error',srch:'92K/mo',
+sum:'ENOENT (Error NO ENTry) means npm or Node.js can\'t find a required file or directory. Common during npm install, when scripts reference missing files, or package-lock.json is out of sync.',
+diff:1,diffl:'Beginner',
+causes:['Missing node_modules (need npm install)','Corrupted package-lock.json','Incorrect file paths in scripts','Global package not in PATH','Case-sensitivity issues (Windows→Linux)'],
+steps:[
+{t:'Clean Install',d:'Delete node_modules and lock file, then reinstall.',c:'rm -rf node_modules package-lock.json\nnpm cache clean --force\nnpm install'},
+{t:'Verify File Paths',d:'Check that all paths in package.json scripts actually exist.',c:'cat package.json | grep -A5 "scripts"'},
+{t:'Check Global npm Prefix',d:'Verify your npm prefix and PATH.',c:'npm config get prefix\nnpm list -g --depth=0'}
+],
+rel:[{c:'EACCES',d:'Permission Denied'},{c:'ELIFECYCLE',d:'Script Failed'},{c:'ERESOLVE',d:'Dependency Conflict'},{c:'ERR_MODULE_NOT_FOUND',d:'Module Missing'}]
+},
+e5:{code:'ERR_CERT_AUTHORITY_INVALID',title:'SSL Certificate Error',sev:'wr',plat:'Browser / SSL/TLS',cat:'Security Error',srch:'320K/mo',
+sum:'The browser doesn\'t trust the site\'s SSL/TLS certificate. It may be self-signed, expired, issued by an untrusted CA, or the system clock may be wrong.',
+diff:2,diffl:'Moderate',
+causes:['Self-signed SSL certificate','Expired certificate','Incorrect system date/time','Missing intermediate certificate','Antivirus intercepting HTTPS'],
+steps:[
+{t:'Check System Date & Time',d:'An incorrect clock is the #1 cause. Ensure date, time, and timezone are correct.'},
+{t:'Test SSL Certificate',d:'Use SSL Labs or openssl to verify the certificate chain.',c:'openssl s_client -connect domain.com:443 -servername domain.com'},
+{t:'Renew Certificate',d:'For expired certs, use Let\'s Encrypt.',c:'sudo certbot renew --dry-run\nsudo certbot renew'},
+{t:'Disable Antivirus HTTPS Scanning',d:'Some antivirus programs (Avast, Kaspersky) intercept HTTPS. Disable "SSL inspection" in settings.'}
+],
+rel:[{c:'ERR_SSL_PROTOCOL_ERROR',d:'SSL Protocol Failure'},{c:'ERR_CONNECTION_REFUSED',d:'Connection Refused'},{c:'NET_ERR_CERT_DATE_INVALID',d:'Expired Cert'}]
+}
+};
+
+const SD={
+s1:{app:'Visual Studio Code',icon:'VS',ic:'ai1',total:287,sc:{
+w:[{a:'Command Palette',k:['Ctrl','Shift','P']},{a:'Quick Open File',k:['Ctrl','P']},{a:'Toggle Sidebar',k:['Ctrl','B']},{a:'Toggle Terminal',k:['Ctrl','`']},{a:'Find in File',k:['Ctrl','F']},{a:'Find & Replace',k:['Ctrl','H']},{a:'Search All Files',k:['Ctrl','Shift','F']},{a:'Go to Line',k:['Ctrl','G']},{a:'Multi-Cursor Select',k:['Ctrl','D']},{a:'Duplicate Line',k:['Shift','Alt','↓']},{a:'Move Line',k:['Alt','↑/↓']},{a:'Delete Line',k:['Ctrl','Shift','K']},{a:'Toggle Comment',k:['Ctrl','/']},{a:'Format Document',k:['Shift','Alt','F']},{a:'Rename Symbol',k:['F2']},{a:'Peek Definition',k:['Alt','F12']},{a:'Split Editor',k:['Ctrl','\\']},{a:'Zen Mode',k:['Ctrl','K','Z']},{a:'Open Settings',k:['Ctrl',',']}],
+m:[{a:'Command Palette',k:['⌘','Shift','P']},{a:'Quick Open File',k:['⌘','P']},{a:'Toggle Sidebar',k:['⌘','B']},{a:'Toggle Terminal',k:['⌘','`']},{a:'Find in File',k:['⌘','F']},{a:'Find & Replace',k:['⌘','H']},{a:'Search All Files',k:['⌘','Shift','F']},{a:'Go to Line',k:['⌃','G']},{a:'Multi-Cursor Select',k:['⌘','D']},{a:'Duplicate Line',k:['Shift','⌥','↓']},{a:'Move Line',k:['⌥','↑/↓']},{a:'Delete Line',k:['⌘','Shift','K']},{a:'Toggle Comment',k:['⌘','/']},{a:'Format Document',k:['Shift','⌥','F']},{a:'Rename Symbol',k:['F2']},{a:'Peek Definition',k:['⌥','F12']},{a:'Split Editor',k:['⌘','\\']},{a:'Zen Mode',k:['⌘','K','Z']},{a:'Open Settings',k:['⌘',',']}]
+}},
+s2:{app:'Microsoft Excel',icon:'Ex',ic:'ai2',total:342,sc:{
+w:[{a:'AutoSum',k:['Alt','=']},{a:'Insert Row',k:['Ctrl','Shift','+']},{a:'Toggle Filter',k:['Ctrl','Shift','L']},{a:'Format Currency',k:['Ctrl','Shift','$']},{a:'Insert Date',k:['Ctrl',';']},{a:'Insert Time',k:['Ctrl','Shift',';']},{a:'Select Column',k:['Ctrl','Space']},{a:'Select Row',k:['Shift','Space']},{a:'Fill Down',k:['Ctrl','D']},{a:'Bold',k:['Ctrl','B']},{a:'Find & Replace',k:['Ctrl','H']},{a:'Paste Special',k:['Ctrl','Alt','V']},{a:'Absolute Ref ($)',k:['F4']},{a:'Edit Cell',k:['F2']},{a:'Flash Fill',k:['Ctrl','E']},{a:'Format Cells',k:['Ctrl','1']},{a:'Insert Function',k:['Shift','F3']}],
+m:[{a:'AutoSum',k:['⌘','Shift','T']},{a:'Insert Row',k:['⌃','Shift','+']},{a:'Toggle Filter',k:['⌘','Shift','L']},{a:'Format Currency',k:['⌃','Shift','$']},{a:'Insert Date',k:['⌃',';']},{a:'Insert Time',k:['⌘',';']},{a:'Select Column',k:['⌃','Space']},{a:'Select Row',k:['Shift','Space']},{a:'Fill Down',k:['⌘','D']},{a:'Bold',k:['⌘','B']},{a:'Find & Replace',k:['⌃','H']},{a:'Paste Special',k:['⌘','⌃','V']},{a:'Absolute Ref ($)',k:['⌘','T']},{a:'Edit Cell',k:['F2']},{a:'Flash Fill',k:['⌃','E']},{a:'Format Cells',k:['⌘','1']},{a:'Insert Function',k:['Shift','F3']}]
+}},
+s3:{app:'Adobe Photoshop',icon:'Ps',ic:'ai3',total:218,sc:{
+w:[{a:'Free Transform',k:['Ctrl','T']},{a:'Duplicate Layer',k:['Ctrl','J']},{a:'Merge Layers',k:['Ctrl','E']},{a:'Deselect',k:['Ctrl','D']},{a:'Inverse Selection',k:['Ctrl','Shift','I']},{a:'Brush Tool',k:['B']},{a:'Eraser',k:['E']},{a:'Move Tool',k:['V']},{a:'Zoom',k:['Z']},{a:'Brush Size +',k:[']']},{a:'Brush Size -',k:['[']},{a:'Fill Foreground',k:['Alt','Backspace']},{a:'Flatten Image',k:['Ctrl','Shift','E']},{a:'Levels',k:['Ctrl','L']},{a:'Curves',k:['Ctrl','M']}],
+m:[{a:'Free Transform',k:['⌘','T']},{a:'Duplicate Layer',k:['⌘','J']},{a:'Merge Layers',k:['⌘','E']},{a:'Deselect',k:['⌘','D']},{a:'Inverse Selection',k:['⌘','Shift','I']},{a:'Brush Tool',k:['B']},{a:'Eraser',k:['E']},{a:'Move Tool',k:['V']},{a:'Zoom',k:['Z']},{a:'Brush Size +',k:[']']},{a:'Brush Size -',k:['[']},{a:'Fill Foreground',k:['⌥','Delete']},{a:'Flatten Image',k:['⌘','Shift','E']},{a:'Levels',k:['⌘','L']},{a:'Curves',k:['⌘','M']}]
+}},
+s4:{app:'Google Chrome',icon:'Cr',ic:'ai2',total:156,sc:{
+w:[{a:'New Tab',k:['Ctrl','T']},{a:'Close Tab',k:['Ctrl','W']},{a:'Reopen Closed Tab',k:['Ctrl','Shift','T']},{a:'Next Tab',k:['Ctrl','Tab']},{a:'Address Bar',k:['Ctrl','L']},{a:'Find on Page',k:['Ctrl','F']},{a:'Bookmark',k:['Ctrl','D']},{a:'DevTools',k:['F12']},{a:'Hard Refresh',k:['Ctrl','Shift','R']},{a:'Incognito',k:['Ctrl','Shift','N']},{a:'Downloads',k:['Ctrl','J']},{a:'History',k:['Ctrl','H']},{a:'Clear Data',k:['Ctrl','Shift','Del']},{a:'Zoom In',k:['Ctrl','+']}],
+m:[{a:'New Tab',k:['⌘','T']},{a:'Close Tab',k:['⌘','W']},{a:'Reopen Closed Tab',k:['⌘','Shift','T']},{a:'Next Tab',k:['⌘','⌥','→']},{a:'Address Bar',k:['⌘','L']},{a:'Find on Page',k:['⌘','F']},{a:'Bookmark',k:['⌘','D']},{a:'DevTools',k:['⌘','⌥','I']},{a:'Hard Refresh',k:['⌘','Shift','R']},{a:'Incognito',k:['⌘','Shift','N']},{a:'Downloads',k:['⌘','Shift','J']},{a:'History',k:['⌘','Y']},{a:'Clear Data',k:['⌘','Shift','Del']},{a:'Zoom In',k:['⌘','+']}]
+}},
+s5:{app:'Figma',icon:'Fi',ic:'ai4',total:194,sc:{
+w:[{a:'Duplicate',k:['Ctrl','D']},{a:'Group',k:['Ctrl','G']},{a:'Ungroup',k:['Ctrl','Shift','G']},{a:'Frame',k:['F']},{a:'Rectangle',k:['R']},{a:'Ellipse',k:['O']},{a:'Text',k:['T']},{a:'Pen',k:['P']},{a:'Scale',k:['K']},{a:'Auto Layout',k:['Shift','A']},{a:'Zoom to Fit',k:['Shift','1']},{a:'Quick Actions',k:['Ctrl','/']},{a:'Create Component',k:['Ctrl','Alt','K']}],
+m:[{a:'Duplicate',k:['⌘','D']},{a:'Group',k:['⌘','G']},{a:'Ungroup',k:['⌘','Shift','G']},{a:'Frame',k:['F']},{a:'Rectangle',k:['R']},{a:'Ellipse',k:['O']},{a:'Text',k:['T']},{a:'Pen',k:['P']},{a:'Scale',k:['K']},{a:'Auto Layout',k:['Shift','A']},{a:'Zoom to Fit',k:['Shift','1']},{a:'Quick Actions',k:['⌘','/']},{a:'Create Component',k:['⌘','⌥','K']}]
+}},
+s6:{app:'Terminal / Bash',icon:'>_',ic:'ai5',total:89,sc:{
+w:[{a:'Reverse Search',k:['Ctrl','R']},{a:'Clear Screen',k:['Ctrl','L']},{a:'Cancel Command',k:['Ctrl','C']},{a:'EOF / Logout',k:['Ctrl','D']},{a:'Line Start',k:['Ctrl','A']},{a:'Line End',k:['Ctrl','E']},{a:'Delete Word',k:['Ctrl','W']},{a:'Delete to Start',k:['Ctrl','U']},{a:'Paste Kill Ring',k:['Ctrl','Y']},{a:'Suspend',k:['Ctrl','Z']},{a:'Tab Complete',k:['Tab']}],
+m:[{a:'Reverse Search',k:['⌃','R']},{a:'Clear Screen',k:['⌃','L']},{a:'Cancel Command',k:['⌃','C']},{a:'EOF / Logout',k:['⌃','D']},{a:'Line Start',k:['⌃','A']},{a:'Line End',k:['⌃','E']},{a:'Delete Word',k:['⌃','W']},{a:'Delete to Start',k:['⌃','U']},{a:'Paste Kill Ring',k:['⌃','Y']},{a:'Suspend',k:['⌃','Z']},{a:'Tab Complete',k:['Tab']}]
+}}
+};
+
+// ======== NAVIGATION ========
+function go(id){
+document.querySelectorAll('.pg').forEach(p=>p.classList.remove('on'));
+document.getElementById(id).classList.add('on');
+document.querySelectorAll('nav a').forEach(a=>a.classList.remove('on'));
+const n=document.querySelector(`nav a[data-n="${id}"]`);
+if(n)n.classList.add('on');
+window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// ======== SEARCH ========
+let si=[];
+Object.entries(ED).forEach(([id,e])=>{
+si.push({type:'e',id,title:e.code,desc:e.title,kw:(e.code+' '+e.title+' '+e.cat+' '+e.causes.join(' ')).toLowerCase()});
+});
+Object.entries(SD).forEach(([id,s])=>{
+si.push({type:'s',id,title:s.app,desc:s.total+' shortcuts',kw:(s.app+' shortcuts keyboard').toLowerCase()});
+s.sc.w.forEach(x=>{si.push({type:'s',id,title:s.app+': '+x.a,desc:x.k.join('+'),kw:(s.app+' '+x.a+' '+x.k.join(' ')).toLowerCase()})});
+});
+
+function hs(q){
+const dd=document.getElementById('sdd');
+if(!q||q.length<2){dd.classList.remove('on');return}
+const ql=q.toLowerCase();
+const seen=new Set();
+const res=si.filter(i=>i.kw.includes(ql)).filter(i=>{if(seen.has(i.title))return false;seen.add(i.title);return true}).slice(0,8);
+if(!res.length){dd.classList.remove('on');return}
+dd.innerHTML=res.map(i=>`<div class="di" onclick="${i.type==='e'?`sed('${i.id}')`:`ssd('${i.id}')`}"><span class="tb ${i.type==='e'?'e':'s'}">${i.type==='e'?'ERR':'KEY'}</span><div><div class="dt">${i.title}</div><div class="ds">${i.desc}</div></div></div>`).join('');
+dd.classList.add('on');
+}
+function qs(t){document.getElementById('ms').value=t;hs(t)}
+document.addEventListener('click',e=>{if(!e.target.closest('.sc'))document.getElementById('sdd').classList.remove('on')});
+
+// ======== ERROR DETAIL ========
+function sed(id){
+const e=ED[id];if(!e)return;
+const db=Array.from({length:5},(_,i)=>`<div class="dbs ${i<e.diff?(e.diff>=4?'f h':e.diff>=3?'f m':'f'):''}"></div>`).join('');
+document.getElementById('edC').innerHTML=`
+<div class="bc"><a onclick="go('home')">Home</a> › <a onclick="go('errors')">Error Codes</a> › ${e.code}</div>
+<div class="dh">
+<div class="et"><h1>${e.code}</h1><span class="svt ${e.sev}">${e.sev==='cr'?'CRITICAL':'WARNING'}</span></div>
+<div class="sum">${e.sum}</div>
+<div class="dmr"><span>📂 <strong>${e.cat}</strong></span><span>💻 <strong>${e.plat}</strong></span><span>🔍 <strong>${e.srch}</strong> searches</span></div>
+<div class="db"><span class="dbl">Fix difficulty:</span>${db}<span class="dbl">${e.diffl}</span></div>
+</div>
+<div class="ad">[ Google AdSense — In-Article 468×60 ]</div>
+<div class="sol"><h2>🔧 Common Causes</h2>${e.causes.map(c=>`<div style="display:flex;gap:10px;align-items:flex-start;margin-bottom:8px"><span style="color:var(--or);flex-shrink:0">▸</span><span style="font-size:14px;color:var(--t2)">${c}</span></div>`).join('')}</div>
+<div class="sol"><h2>✅ Step-by-Step Fix</h2>
+${e.steps.map((s,i)=>`<div class="step"><div class="snum">${i+1}</div><div class="stc"><h4>${s.t}</h4><p>${s.d}</p>${s.c?`<div class="cb"><button class="cpb" onclick="cc(this)">Copy</button>${s.c}</div>`:''}</div></div>`).join('')}
+<div class="hlp"><span>Was this helpful?</span><button class="vb" onclick="vt(this)">👍 Yes</button><button class="vb" onclick="vt(this)">👎 No</button><span style="font-size:12px;color:var(--t3);margin-left:8px">1,247 found this helpful</span></div>
+</div>
+<div class="ad">[ Google AdSense — In-Content 336×280 ]</div>
+<div class="sol"><h2>🔗 Related Error Codes</h2><div class="rg">${e.rel.map(r=>`<div class="ri" onclick="qs('${r.c}')"><code>${r.c}</code><p>${r.d}</p></div>`).join('')}</div></div>`;
+go('errdet');
+}
+
+// ======== SHORTCUT DETAIL ========
+let cos='w';
+function ssd(id){
+const s=SD[id];if(!s)return;
+const rk=o=>s.sc[o].map(x=>`<div class="sdi"><span class="an">${x.a}</span><div class="skk">${x.k.map((k,i)=>`<kbd>${k}</kbd>${i<x.k.length-1?'<span class="kp">+</span>':''}`).join('')}</div></div>`).join('');
+document.getElementById('sdC').innerHTML=`
+<div class="bc"><a onclick="go('home')">Home</a> › <a onclick="go('shortcuts')">Shortcuts</a> › ${s.app}</div>
+<div class="dh"><div class="et"><div class="ai ${s.ic}" style="width:48px;height:48px;font-size:20px">${s.icon}</div><div><h1 style="font-family:'Outfit',sans-serif">${s.app}</h1><span style="font-size:14px;color:var(--t2)">${s.total} keyboard shortcuts</span></div></div></div>
+<div class="ost"><button class="${cos==='w'?'on':''}" onclick="cos='w';ssd('${id}')">🪟 Windows</button><button class="${cos==='m'?'on':''}" onclick="cos='m';ssd('${id}')">🍎 macOS</button></div>
+<div class="ad">[ Google AdSense — In-Article 468×60 ]</div>
+<div class="sol" style="margin-top:16px"><h2>⌨️ Essential Shortcuts</h2><div class="sdg">${rk(cos)}</div></div>
+<div class="ad">[ Google AdSense — In-Content 336×280 ]</div>
+<div class="sol"><h2>🎯 Practice These</h2><p style="color:var(--t2)">Head to our <a style="color:var(--g);cursor:pointer" onclick="go('tools')">Shortcut Trainer</a> to practice ${s.app} shortcuts interactively.</p></div>`;
+go('scdet');
+}
+
+// ======== UTILITIES ========
+function cc(btn){const code=btn.parentElement.textContent.replace('Copy','').trim();navigator.clipboard.writeText(code);btn.textContent='Copied!';setTimeout(()=>btn.textContent='Copy',2000)}
+function vt(btn){document.querySelectorAll('.vb').forEach(b=>b.classList.remove('vd'));btn.classList.add('vd')}
+
+// ======== SHORTCUT TRAINER ========
+const TQ=[
+{a:'Undo',ans:'Ctrl+Z'},{a:'Copy',ans:'Ctrl+C'},{a:'Paste',ans:'Ctrl+V'},{a:'Save',ans:'Ctrl+S'},{a:'Select All',ans:'Ctrl+A'},
+{a:'Find (VS Code)',ans:'Ctrl+F'},{a:'New Tab (Chrome)',ans:'Ctrl+T'},{a:'Close Tab',ans:'Ctrl+W'},{a:'Redo',ans:'Ctrl+Y'},
+{a:'Bold',ans:'Ctrl+B'},{a:'Cut',ans:'Ctrl+X'},{a:'Print',ans:'Ctrl+P'},{a:'Reopen Tab',ans:'Ctrl+Shift+T'}
+];
+let cq=0,pk=new Set();
+function ntq(){cq=Math.floor(Math.random()*TQ.length);document.getElementById('tq').textContent=TQ[cq].a;document.getElementById('ti').textContent='Waiting for input...';document.getElementById('ti').style.color='var(--g)';document.getElementById('tf').textContent='';pk.clear()}
+document.addEventListener('keydown',e=>{
+if(!document.getElementById('tools').classList.contains('on'))return;
+e.preventDefault();
+const key=e.key==='Control'?'Ctrl':e.key==='Meta'?'⌘':e.key.length===1?e.key.toUpperCase():e.key;
+pk.add(key);
+document.getElementById('ti').textContent=[...pk].join('+');
+const ans=TQ[cq].ans;
+if([...pk].join('+')=== ans){document.getElementById('tf').textContent='✅ Correct!';document.getElementById('tf').style.color='var(--g)'}
+});
+document.addEventListener('keyup',()=>{setTimeout(()=>pk.clear(),500)});
+
+// ======== ERROR DIFF CHECKER ========
+function rdiff(){
+const a=document.getElementById('da').value.trim(),b=document.getElementById('db').value.trim();
+const ea=Object.values(ED).find(e=>e.code.toLowerCase()===a.toLowerCase());
+const eb=Object.values(ED).find(e=>e.code.toLowerCase()===b.toLowerCase());
+const dr=document.getElementById('dr');dr.style.display='block';
+if(ea&&eb){
+dr.innerHTML=`<div style="margin-bottom:12px"><strong style="color:var(--cy)">${ea.code}</strong> — ${ea.title}</div><div style="margin-bottom:12px"><strong style="color:var(--or)">${eb.code}</strong> — ${eb.title}</div><div style="border-top:1px solid var(--bd);padding-top:12px"><strong>Key Difference:</strong> <span style="color:var(--t2)">${ea.code} is about <em>${ea.causes[0].toLowerCase()}</em>, while ${eb.code} relates to <em>${eb.causes[0].toLowerCase()}</em>. Different root causes require different fix strategies.</span></div>`;
+}else{
+dr.innerHTML=`<span style="color:var(--t2)">Enter error codes from our database to compare. Try: <strong style="color:var(--g);cursor:pointer" onclick="document.getElementById('da').value='0x80070005';document.getElementById('db').value='HTTP 500';rdiff()">0x80070005 vs HTTP 500</strong></span>`;
+}
+}
+
+// ======== POPULATE LISTS ========
+function init(){
+// Error list on home
+const el=document.getElementById('errList');
+el.innerHTML=Object.entries(ED).map(([id,e])=>`<div class="ec" onclick="sed('${id}')"><span class="ecb ${e.sev}">${e.code}</span><div class="ecc"><h4>${e.title}</h4><p>${e.sum.substring(0,80)}...</p><div class="em"><span>${e.plat}</span><span>•</span><span>${e.srch}</span></div></div></div>`).join('');
+
+// Shortcut list on home
+const sl=document.getElementById('scList');
+sl.innerHTML=Object.entries(SD).map(([id,s])=>`<div class="skc" onclick="ssd('${id}')"><div class="skl"><div class="ai ${s.ic}">${s.icon}</div><div class="ski"><h4>${s.app}</h4><p>${s.total} shortcuts</p></div></div><div class="skk">${s.sc.w[0].k.map((k,i)=>`<kbd>${k}</kbd>${i<s.sc.w[0].k.length-1?'<span class="kp">+</span>':''}`).join('')}</div></div>`).join('');
+
+// Error grid
+const eg=document.getElementById('errGrid');
+const allErr=[...Object.entries(ED).map(([id,e])=>({id,code:e.code,title:e.title,sev:e.sev})),
+{id:'e1',code:'HTTP 403',title:'Forbidden',sev:'cr'},{id:'e1',code:'HTTP 404',title:'Not Found',sev:'wr'},
+{id:'e1',code:'SEGFAULT',title:'Segmentation Fault',sev:'cr'},{id:'e4',code:'ModuleNotFoundError',title:'Python Import Error',sev:'wr'},
+{id:'e1',code:'0x80004005',title:'Unspecified Error',sev:'cr'},{id:'e5',code:'ERR_CONNECTION_REFUSED',title:'Connection Error',sev:'wr'},
+{id:'e3',code:'KERNEL_DATA_INPAGE',title:'Disk BSOD',sev:'cr'},{id:'e2',code:'HTTP 502',title:'Bad Gateway',sev:'cr'}];
+eg.innerHTML=allErr.map(e=>`<div class="cc" onclick="sed('${e.id}')"><span class="ci">${e.sev==='cr'?'🔴':'🟡'}</span><h4>${e.code}</h4><span class="ct">${e.title}</span></div>`).join('');
+
+// Shortcut grid
+const sg=document.getElementById('scGrid');
+const emojis=['💜','💚','💙','🟡','🟣','🖤','💛','🧡','❤️'];
+sg.innerHTML=Object.entries(SD).map(([id,s],i)=>`<div class="cc" onclick="ssd('${id}')"><span class="ci">${emojis[i]||'⌨️'}</span><h4>${s.app}</h4><span class="ct">${s.total} shortcuts</span></div>`).join('');
+
+ntq();
+}
+
+init();
+</script>
+</body>
+</html>
